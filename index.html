@@ -13,33 +13,37 @@
         margin: 0;
         padding: 0;
         font-family: 'Poppins', sans-serif;
-        background-color: white;
+        background-color: #000000;
+        
         line-height: 1.2;
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: black;
     }
 
     .banner {
         width: 100%;
         max-width: 1080px;
         height: 200px;
-        background-color: black;
+        background-image: url('https://i.postimg.cc/L4wS1XVf/file-00000000299061f5b73a16b1101de63f-1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
-    /* Contenedor principal que centra todo */
     .profile-container {
         width: 90%;
         max-width: 600px;
-        margin-top: -75px; /* Superpone la foto sobre el banner */
-        text-align: left; /* Alinea el texto a la izquierda */
+        margin-top: -75px;
+        text-align: left;
     }
 
     .profile-photo {
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        border: 4px solid white;
+        border: 4px solid #ff00cf; /* borde rosa neón */
         object-fit: cover;
         display: block;
         margin-bottom: 20px;
@@ -49,18 +53,22 @@
         margin: 0;
         font-size: 36px;
         font-weight: 700;
+        color: #ff00cf;
     }
 
     .profile-info p {
         margin: 4px 0 12px 0;
         font-size: 20px;
-        color: #555;
+        color: #ff00cf;
     }
 
     .subtitle {
         font-size: 18px;
         font-weight: 400;
         margin-bottom: 32px;
+        color: #ff00cf;
+        line-height: 1.2;
+        text-align: justify; /* texto justificado */
     }
 
     .buttons {
@@ -77,16 +85,30 @@
         text-align: center;
         padding: 14px 0;
         border: 2px solid black;
-        background-color: white;
-        color: black;
+        background-color: black;
+        color:#ff00cf;
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 600;
         border-radius: 8px;
         transition: 0.2s;
     }
 
     .buttons a:hover {
-        background-color: #f0f0f0;
+        background-color: #222;
+    }
+
+    .emoji {
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+    }
+
+    .sticker {
+        width: 2em;
+        height: 2em;
+        vertical-align: middle;
+        margin-left: 6px; /* espacio desde "Queen B" */
+        filter: drop-shadow(0 0 6px #ff00cf) drop-shadow(0 0 8px #ff00cf); /* efecto neón rosa */
     }
 
     @media (max-width: 480px) {
@@ -107,24 +129,30 @@
         .buttons a {
             font-size: 16px;
         }
+        .sticker {
+            width: 2em;
+            height: 2em;
+        }
     }
-
 </style>
 </head>
 <body>
 
-    <!-- Banner negro -->
     <div class="banner"></div>
 
-    <!-- Contenedor principal -->
     <div class="profile-container">
-        <img class="profile-photo" src="https://i.postimg.cc/TYJyy50K/ilvia-20250906-172835-0000.png" alt="Foto de perfil">
+        <img class="profile-photo" src="https://i.postimg.cc/brZ928hY/file-00000000264c61fbbe925aa9462dcbcf-1.jpg" alt="Logo María Barbara Zavala">
         <div class="profile-info">
-            <h1>María Barbara Zavala</h1>
+            <h1>
+                María Barbara Zavala 
+                <img src="https://i.postimg.cc/c1B1tYJz/ei-1758679752019-removebg-preview.png" alt="emoji" class="emoji">
+            </h1>
             <p>@mariabarbarazav</p>
             <div class="subtitle">
-                Licenciada en administración con un posgrado en gestión empresarial con enfoque en liderazgo sistémico.
+                Barbara's Kingdom | Queen B 
+                <img src="https://i.postimg.cc/Njs711YP/ei-1758681124040-removebg-preview.png" alt="sticker" class="sticker"><br>
+                Mis colecciones: Maquillaje, belleza, cosmética, cosméticos, cosmetología, productos de belleza, cuidado de la piel, moda, diseño y estilo.
+                <img src="https://i.postimg.cc/WpxR31Gy/ei-1758679784939-removebg-preview.png" alt="emoji" class="emoji">
             </div>
-
 </body>
 </html> 
