@@ -13,8 +13,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Poppins', sans-serif;
-        background-color: #000000;
-        
+        background-color: #ffffff; /* Fondo blanco */
         line-height: 1.2;
         display: flex;
         flex-direction: column;
@@ -26,24 +25,21 @@
         width: 100%;
         max-width: 1080px;
         height: 200px;
-        background-image: url('https://i.postimg.cc/L4wS1XVf/file-00000000299061f5b73a16b1101de63f-1.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-color: #000000; /* Banner negro liso */
     }
 
     .profile-container {
         width: 90%;
         max-width: 600px;
         margin-top: -75px;
-        text-align: left;
+        text-align: left; /* Todo alineado a la izquierda */
     }
 
     .profile-photo {
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        border: 4px solid #ff00cf; /* borde rosa neón */
+        border: 4px solid #ffffff; /* borde blanco */
         object-fit: cover;
         display: block;
         margin-bottom: 20px;
@@ -53,62 +49,28 @@
         margin: 0;
         font-size: 36px;
         font-weight: 700;
-        color: #ff00cf;
+        color: black; /* texto negro */
     }
 
     .profile-info p {
         margin: 4px 0 12px 0;
         font-size: 20px;
-        color: #ff00cf;
+        color: black; /* texto negro */
     }
 
     .subtitle {
         font-size: 18px;
         font-weight: 400;
         margin-bottom: 32px;
-        color: #ff00cf;
-        line-height: 1.2;
-        text-align: justify; /* texto justificado */
+        color: black; /* texto negro */
+        line-height: 1.4;
+        text-align: justify; /* presentación justificada */
     }
 
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        width: 100%;
-        margin-bottom: 40px;
-    }
-
-    .buttons a {
+    .subtitle strong {
         display: block;
-        text-decoration: none;
-        text-align: center;
-        padding: 14px 0;
-        border: 2px solid black;
-        background-color: black;
-        color:#ff00cf;
-        font-size: 18px;
-        font-weight: 600;
-        border-radius: 8px;
-        transition: 0.2s;
-    }
-
-    .buttons a:hover {
-        background-color: #222;
-    }
-
-    .emoji {
-        width: 1em;
-        height: 1em;
-        vertical-align: middle;
-    }
-
-    .sticker {
-        width: 2em;
-        height: 2em;
-        vertical-align: middle;
-        margin-left: 6px; /* espacio desde "Queen B" */
-        filter: drop-shadow(0 0 6px #ff00cf) drop-shadow(0 0 8px #ff00cf); /* efecto neón rosa */
+        margin-bottom: 8px; /* Barbara's Kingdom arriba */
+        color: black;
     }
 
     @media (max-width: 480px) {
@@ -126,13 +88,6 @@
         .subtitle {
             font-size: 16px;
         }
-        .buttons a {
-            font-size: 16px;
-        }
-        .sticker {
-            width: 2em;
-            height: 2em;
-        }
     }
 </style>
 </head>
@@ -141,18 +96,16 @@
     <div class="banner"></div>
 
     <div class="profile-container">
-        <img class="profile-photo" src="https://i.postimg.cc/brZ928hY/file-00000000264c61fbbe925aa9462dcbcf-1.jpg" alt="Logo María Barbara Zavala">
+        <img class="profile-photo" src="https://i.ibb.co/fdqhGS42/profile.jpg" alt="Logo María Barbara Zavala">
         <div class="profile-info">
-            <h1>
-                María Barbara Zavala 
-                <img src="https://i.postimg.cc/c1B1tYJz/ei-1758679752019-removebg-preview.png" alt="emoji" class="emoji">
-            </h1>
+            <h1>María Barbara Zavala</h1>
             <p>@mariabarbarazav</p>
             <div class="subtitle">
-                Barbara's Kingdom | Queen B 
-                <img src="https://i.postimg.cc/Njs711YP/ei-1758681124040-removebg-preview.png" alt="sticker" class="sticker"><br>
-                Mis colecciones: Maquillaje, belleza, cosmética, cosméticos, cosmetología, productos de belleza, cuidado de la piel, moda, diseño y estilo.
-                <img src="https://i.postimg.cc/WpxR31Gy/ei-1758679784939-removebg-preview.png" alt="emoji" class="emoji">
+                <strong>Barbara's Kingdom | Queen B</strong>
+                Bachelor’s degree in Business Administration with postgraduate specialization in Business Management focused on Systemic Leadership.
             </div>
+        </div>
+    </div>
+
 </body>
 </html> 
